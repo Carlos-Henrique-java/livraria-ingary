@@ -3,7 +3,7 @@ package br.com.livraria.ingary.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.math.BigDecimal;
+
 
 @Entity
 @Table(name = "livro")
