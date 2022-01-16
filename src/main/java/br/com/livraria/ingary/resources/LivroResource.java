@@ -9,7 +9,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping(value = "/api")
+@RequestMapping(value = "/apilivro")
 public class LivroResource {
 
     @Autowired
@@ -35,7 +35,7 @@ public class LivroResource {
         livroRepository.delete(livro);
     }
 
-    @DeleteMapping("/livro")
+    @PutMapping("/livro")
     public Livro atualizaLivro(@RequestBody Livro livro){
         return livroRepository.save(livro);
     }

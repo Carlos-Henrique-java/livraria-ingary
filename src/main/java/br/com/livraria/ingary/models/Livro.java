@@ -6,14 +6,14 @@ import java.io.Serializable;
 
 
 @Entity
-@Table(name = "livro")
+@Table(name = "TB_LIVRO")
 public class Livro implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private  long id;
+    private long id;
 
     private String capa;
     private String titulo;
@@ -22,7 +22,7 @@ public class Livro implements Serializable {
     private String coAutor;
     private String ilustracao;
     private int paginacao;
-    private  String editora;
+    private String editora;
     private String edicao;
     private int anoLancamento;
     private String genero;
@@ -39,7 +39,6 @@ public class Livro implements Serializable {
     public void setId(long id) {
         this.id = id;
     }
-
     public String getCapa() {
         return capa;
     }
