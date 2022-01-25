@@ -20,9 +20,9 @@ public class LivroResource {
         return livroRepository.findAll();
     }
 
-    @GetMapping("/livro/{id}")
-    public Livro listaLivroUnico(@PathVariable(value = "id")long id){
-        return livroRepository.findById(id);
+    @GetMapping("/livro/{genero}")
+    public Livro listaLivroUnico(@PathVariable(value = "genero")String genero){
+        return livroRepository.findByGenero(genero);
     }
 
     @PostMapping("/livro")

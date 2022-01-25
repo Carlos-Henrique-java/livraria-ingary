@@ -22,6 +22,30 @@ public class Cliente  implements Serializable {
     private byte cvc;
     private String dataVencimento;
 
+    public String getNumeroCartao() {
+        return numeroCartao;
+    }
+
+    public void setNumeroCartao(String numeroCartao) {
+        this.numeroCartao = numeroCartao;
+    }
+
+    public byte getCvc() {
+        return cvc;
+    }
+
+    public void setCvc(byte cvc) {
+        this.cvc = cvc;
+    }
+
+    public String getDataVencimento() {
+        return dataVencimento;
+    }
+
+    public void setDataVencimento(String dataVencimento) {
+        this.dataVencimento = dataVencimento;
+    }
+
     public long getId() {
         return id;
     }
